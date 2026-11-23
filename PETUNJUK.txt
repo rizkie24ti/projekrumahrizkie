@@ -1,0 +1,24 @@
+CARA PAKAI
+1. Buka folder zip ini: aplikasikota/app/src/main/
+2. Salin isi folder java/com/example/aplikasikota/ ke folder yang sama di projek Anda
+   (timpa MainActivity.kt jika sudah ada). Jika package projek Anda BUKAN
+   com.example.aplikasikota, ubah baris "package ..." di tiap file .kt.
+3. Salin folder res/ (values, layout, drawable, menu, color, font) ke app/src/main/res/ (timpa jika ditanya).
+   Hapus res/values-night/themes.xml jika ada.
+4. Ganti AndroidManifest.xml dengan yang ada di sini.
+5. FONT: file .ttf TIDAK ikut di zip. Unduh Poppins dari fonts.google.com, lalu salin ke res/font/ dengan nama:
+   poppins_regular.ttf, poppins_medium.ttf, poppins_bold.ttf
+   (res/font/poppins.xml sudah disediakan).
+6. Dependency di app/build.gradle (biasanya sudah ada):
+   implementation 'androidx.appcompat:appcompat:1.6.1'
+   implementation 'com.google.android.material:material:1.9.0'
+   implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+7. Build > Clean Project, lalu Rebuild Project, lalu Run.
+
+AKUN LOGIN: admin / 12345
+
+LETAK TUGAS TERBARU
+- Bottom navigation : activity_main.xml, menu/bottom_nav.xml, MainActivity.kt
+- ListView simple list item (ArrayAdapter) : tab Info -> InfoFragment.kt, fragment_info.xml
+- ListView custom adapter : tab Manage (Pantau Laporan) -> LaporanAdapter.kt, Laporan.kt,
+  item_laporan.xml, PantauFragment.kt, fragment_pantau.xml

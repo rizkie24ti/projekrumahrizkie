@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/deep_navy"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search"
+            android:tint="@color/slate_gray" />
+
+        <EditText
+            android:id="@+id/etCari"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:hint="Tulis lokasi, keluhan dan nama"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            android:textColor="@color/deep_navy"
+            android:textColorHint="@color/slate_gray"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_map" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori"
+                    android:textColor="@color/deep_navy"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    app:chipSpacingVertical="0dp"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Jalan Rusak"
+                        android:textColor="@color/chip_text"
+                        android:textSize="10sp"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg"
+                        app:chipStrokeWidth="0dp" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drainase Tersumbat"
+                        android:textColor="@color/chip_text"
+                        android:textSize="10sp"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg"
+                        app:chipStrokeWidth="0dp" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trotoar Rusak"
+                        android:textColor="@color/chip_text"
+                        android:textSize="10sp"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg"
+                        app:chipStrokeWidth="0dp" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lampu Jalan"
+                        android:textColor="@color/chip_text"
+                        android:textSize="10sp"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@color/chip_bg"
+                        app:chipStrokeWidth="0dp" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Unggah Foto"
+                    android:textColor="@color/deep_navy"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/boxUnggah"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_dashed"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:src="@drawable/ic_camera"
+                        android:tint="@color/slate_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Unggah Foto"
+                        android:textColor="@color/slate_gray"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/crisp_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/vibrant_orange"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

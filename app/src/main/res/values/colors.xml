@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vibrant_orange">#FF6400</color>
+    <color name="deep_navy">#0F172A</color>
+    <color name="warm_cream">#F6DCBF</color>
+    <color name="crisp_white">#FFFFFF</color>
+    <color name="slate_gray">#64748B</color>
+    <color name="bg_screen">#F8FAFC</color>
+    <color name="orange_light">#FFE8D9</color>
+    <color name="chip_gray">#E8ECF2</color>
+    <color name="line_gray">#CBD5E1</color>
+    <color name="green_done">#0F9D8A</color>
+    <color name="gold">#F5A623</color>
+</resources>

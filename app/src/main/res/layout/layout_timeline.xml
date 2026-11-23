@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Laporan Diterima -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="28dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/line_gray" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@drawable/bg_dot_orange"
+                android:padding="3dp"
+                android:src="@drawable/ic_check" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laporan Diterima"
+                android:textColor="@color/deep_navy"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/tvTerimaSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laporan 5, 2022"
+                android:textColor="@color/slate_gray"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Proses Peninjauan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="28dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_dot_navy" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proses Peninjauan"
+                android:textColor="@color/deep_navy"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laporan 5, 2022"
+                android:textColor="@color/slate_gray"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="76dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_photo1" />
+
+                <View
+                    android:layout_width="76dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_photo2" />
+
+                <View
+                    android:layout_width="76dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_photo3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Sedang Diperbaiki -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="28dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_dot_navy" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedang Diperbaiki"
+                android:textColor="@color/deep_navy"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laporan 5, 2022"
+                android:textColor="@color/slate_gray"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Selesai -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="28dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/line_gray" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@drawable/bg_dot_green"
+                android:padding="3dp"
+                android:src="@drawable/ic_check" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selesai"
+                android:textColor="@color/deep_navy"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laporan 13, 2022"
+                android:textColor="@color/slate_gray"
+                android:textSize="9sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laporan selesai ditangani dan dikonfirmasi."
+                android:textColor="@color/slate_gray"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
